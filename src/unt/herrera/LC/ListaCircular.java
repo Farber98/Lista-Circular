@@ -17,7 +17,7 @@ public class ListaCircular implements IListaCircular
 
     public ListaCircular() 
     {
-        
+        this.lc = null;
     }
     
     
@@ -37,7 +37,7 @@ public class ListaCircular implements IListaCircular
         if(esVacia())      
         {
             this.lc=unItem;
-            unItem.setSiguiente(this.lc);
+            unItem.setSiguiente(unItem);
         }
         else           
         {
